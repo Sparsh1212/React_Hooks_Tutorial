@@ -8,6 +8,10 @@ class ClassCounter extends Component {
     };
   }
 
+  componentWillUnmount() {
+    console.log('unmounting code');
+  }
+
   incrementCount = () => this.setState({ count: this.state.count + 1 });
   render() {
     return (

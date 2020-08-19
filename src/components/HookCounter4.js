@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HookCounter from './HookCounter';
 
 const HookCounter4 = () => {
   const [items, setItems] = useState([]);
@@ -21,6 +22,7 @@ const HookCounter4 = () => {
           <li key={item.id}>{item.value}</li>
         ))}
       </ul>
+      {items.length !== 5 && <HookCounter />}
     </React.Fragment>
   );
 };
