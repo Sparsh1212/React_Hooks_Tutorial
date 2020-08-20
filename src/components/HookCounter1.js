@@ -53,7 +53,8 @@ useEffect(() => {
     return unmountingHandler
 }, [])
 ************************************************************************************************************************************************
-*************Note: Do not forget to pass an empty array as the second parameter to useEffect while using it as ComponentWillUnmount*************
+*************Note: Do not forget to pass an empty array as the second parameter to useEffect while using it as ComponentWillUnmount
+also you can also use it while using the useEffect as ComponentDidMount, it will work the same as before.****************************************
 ************************************************************************************************************************************************
 const unmountingHandler = () => {
     console.log('Unmounting code done');

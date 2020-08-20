@@ -1,11 +1,11 @@
 import React from 'react';
 
-import HookCounter4 from './components/HookCounter4';
+import DataFetchingHooks from './components/DataFetching';
 
 function App() {
   return (
     <div>
-      <HookCounter4 />
+      <DataFetchingHooks />
     </div>
   );
 }
